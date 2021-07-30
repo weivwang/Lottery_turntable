@@ -34,7 +34,7 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
 ## other things
 因为主界面的转盘找不到合适的素材，所以自己手画了一个，略丑，而且因为画的有点不标准，转盘转动稍微有一点晃动。
 
-![](https://i.loli.net/2021/07/30/WsQlEIY6uUdGH8O.png=100*50)
+![](https://i.loli.net/2021/07/30/WsQlEIY6uUdGH8O.png)
 
 部署到轻服务的网址：https://wangweiweiturntable.web.cloudendpoint.cn
 
@@ -43,7 +43,7 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
 没有设置管理员登陆功能。
 
 初始奖品设置：
-![](https://i.loli.net/2021/07/30/o8kZ7UdKfzi6Q5R.png = 100*50)
+![](https://i.loli.net/2021/07/30/o8kZ7UdKfzi6Q5R.png)
 
 感觉自己只是把基本功能完成了，也是在网上看了很多资料，参考着写，代码的质量也不高，后面还需要系统地学习
 
