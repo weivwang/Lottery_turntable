@@ -32,9 +32,9 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
   - 搭建一个简单的运营后台，支持简单的增加奖品、删除奖品、设置中奖概率、设置库存等功能
 
 ## other things
-因为主界面的转盘找不到合适的素材，所以自己手画了一个，略丑。
+因为主界面的转盘找不到合适的素材，所以自己手画了一个，略丑，而且因为画的有点不标准，转盘转动稍微有一点晃动。
 
-![](https://i.loli.net/2021/07/30/WsQlEIY6uUdGH8O.png)
+![](https://i.loli.net/2021/07/30/WsQlEIY6uUdGH8O.png){:height="50%" width="50%"}
 
 部署到轻服务的网址：https://wangweiweiturntable.web.cloudendpoint.cn
 
@@ -43,7 +43,7 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
 没有设置管理员登陆功能。
 
 初始奖品设置：
-![](https://i.loli.net/2021/07/30/o8kZ7UdKfzi6Q5R.png)
+![](https://i.loli.net/2021/07/30/o8kZ7UdKfzi6Q5R.png){:height="50%" width="50%"}
 
 感觉自己只是把基本功能完成了，也是在网上看了很多资料，参考着写，代码的质量也不高，后面还需要系统地学习
 
