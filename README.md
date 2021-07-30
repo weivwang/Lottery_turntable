@@ -41,6 +41,8 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
 初始奖品设置：
 ![](https://i.loli.net/2021/07/30/o8kZ7UdKfzi6Q5R.png)
 
+感觉自己只是把基本功能完成了，也是在网上看了很多资料，参考着写，代码的质量也不高，后面还需要系统地学习
+
 ## 实践流程记录
 
 
@@ -53,5 +55,5 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
 7月24-7月30
   - 结束实训，开始专心看前后端数据交互部分
   - 完成了轻服务接口创建
-  - 完成奖品后台
+  - 完成奖品后台搭建
 
