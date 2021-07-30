@@ -35,6 +35,7 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
 因为主界面的转盘找不到合适的素材，所以自己手画了一个，略丑，而且因为画的有点不标准，转盘转动稍微有一点晃动。
 
 ![](https://i.loli.net/2021/07/30/WsQlEIY6uUdGH8O.png)
+<img src="https://i.loli.net/2021/07/30/WsQlEIY6uUdGH8O.png" width="100px"/>
 
 部署到轻服务的网址：https://wangweiweiturntable.web.cloudendpoint.cn
 
@@ -51,7 +52,7 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
 
 
 7月5-7月24
-  - 由于学习暑期实训是这一段时间，所以白天8:00-18:00都在实验室，做老师的项目。最初的那一段时间晚上还有课，是18:30-21:00。这一段时间的学习进度，开发进度比较慢的。
+  - 由于学习暑期实训是这一段时间，所以白天8:00-18:00都在实验室，做老师的项目。最初的那一段时间晚上还有课，是18:30-21:00。这一段时间的学习进度，开发进度比较慢。
   - 基本完成前端页面
   - 在网上找的vue教程视频看了2/3，了解了路由，以及created，beforecreated等等生命周期函数
 
