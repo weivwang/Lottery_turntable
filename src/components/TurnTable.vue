@@ -77,10 +77,11 @@ export default {
       } else {
         alert('恭喜获得' + this.prizelist[this.index - 1].prize_name + '元')
         this.prizelist[this.index - 1].prize_amount--
+        axios.post('https://qcg1jg.fn.thelarkcloud.com/reduceAmount', {
+          name: this.prizelist[this.index - 1].prize_name
+        })
       }
-      axios.post('https://qcg1jg.fn.thelarkcloud.com/reduceAmount', {
-        name: this.prizelist[this.index - 1].prize_name
-      })
+
       location.reload()
     }
   }
