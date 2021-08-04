@@ -58,8 +58,8 @@ export default {
     }
   },
   methods: {
-    run () {
-      axios.post('https://qcg1jg.fn.thelarkcloud.com/returnPrize').then(
+    async run () {
+      await axios.post('https://qcg1jg.fn.thelarkcloud.com/returnPrize').then(
         res => {
           console.log(res)
           this.index = res.data.index
@@ -67,13 +67,15 @@ export default {
       )
       if (this.isrun) return
       this.isrun = true
+      console.log(this.index)
       this.rotateAngle = (this.circle - 1) * 360 - (30 + (this.index - 1) * 60)
+      console.log((30 + (this.index - 1) * 60))
       this.hasrun = true
       setTimeout(this.note, 5000)
-      console.log(this.index)
       this.isrun = false
     },
     note () {
+      console.log(this.index)
       if (this.index === 5) { alert('差一点点就获奖了～') } else if (this.index === 6) {
         alert('恭喜获得' + this.prizelist[this.index - 2].prize_name + '元')
       } else {
