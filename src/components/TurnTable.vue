@@ -150,7 +150,7 @@ export default {
 }
 .prize_4{
   position: absolute;
-  transform: rotate(220deg);
+  transform: rotate(209deg);
     margin-left: 296px;
     margin-top: 288px;
     line-height: 17px;
