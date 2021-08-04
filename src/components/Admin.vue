@@ -38,7 +38,7 @@
     </el-form-item>
   </el-form>
   <div slot="footer" class="dialog-footer">
-    <el-button @click="dialogFormVisible = false">取 消</el-button>
+    <el-button @click="dialogFormVisible = false; cleardata()">取 消</el-button>
     <el-button type="primary" @click="dialogFormVisible = false; createPrize()">确 定</el-button>
   </div>
 </el-dialog>
@@ -46,8 +46,11 @@
 <!-- 修改Form -->
     <el-dialog title="修改奖品" :visible.sync="updateDialogFormVisible">
     <el-form :model="prize">
-    <el-form-item label="需修改的奖品名称" :label-width="formLabelWidth">
-      <el-input v-model="prize.name" autocomplete="off"></el-input>
+    <el-form-item label="奖品名称" :label-width="formLabelWidth">
+      <el-select v-model="prize.name" placeholder="请选择奖品名称" width="100px">
+      <el-option v-for="prizeitem in prizelist" :key='prizeitem.prize_name' :label="prizeitem.prize_name" :value="prizeitem.prize_name">
+      </el-option>
+      </el-select>
     </el-form-item>
     <el-form-item label="奖品数量" :label-width="formLabelWidth">
       <el-input v-model="prize.amount" autocomplete="off"></el-input>
@@ -57,7 +60,7 @@
     </el-form-item>
   </el-form>
   <div slot="footer" class="dialog-footer">
-    <el-button @click="updateDialogFormVisible = false">取 消</el-button>
+    <el-button @click="updateDialogFormVisible = false; cleardata()">取 消</el-button>
     <el-button type="primary" @click="updateDialogFormVisible = false; updatePrize()">确 定</el-button>
   </div>
 </el-dialog>
@@ -118,6 +121,7 @@ export default {
         .catch((res) => {
           this.$message.console.error('添加失败！')
         })
+      this.cleardata()
     },
     updatePrize () {
       console.log(this.prize)
@@ -128,6 +132,14 @@ export default {
         .catch((res) => {
           this.$message.console.error('更新失败！')
         })
+      this.cleardata()
+    },
+    cleardata () {
+      this.prize = {
+        name: '',
+        amount: '',
+        prize_probility: ''
+      }
     }
   },
   mounted () {
